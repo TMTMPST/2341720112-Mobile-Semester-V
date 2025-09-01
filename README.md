@@ -42,13 +42,3 @@ This repository is a collection of university tasks and assignments focused on l
 Flutter is an open-source framework by Google for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase. It's fast, flexible, and fun to learn!
 
 ---
-
-## 🤝 Contributing
-
-Feel free to explore, modify, and experiment with the code. Contributions and suggestions are always welcome!
-
----
-
-## 📞 Contact
-
-For questions or feedback, reach out via [GitHub Issues](https://github.com/TMTMPST/Mobile-Sem-V/issues).
