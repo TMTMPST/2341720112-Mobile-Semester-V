@@ -41,8 +41,6 @@ void main(){
 ## Soal 2 
 ### Mengapa sangat penting untuk memahami bahasa pemrograman Dart sebelum kita menggunakan framework Flutter ? Jelaskan!
 
-**Dart adalah fondasi dari Flutter.** Berikut alasan mengapa pemahaman Dart sangat penting:
-
 1. Karena Dart adalah satu-satunya bahasa pemrograman yang digunakan Flutter
 2. Memudahkan dalam menulis dan memahami kode Flutter
 3. Kemampuan men-debug aplikasi Flutter memerlukan pemahaman Dart
