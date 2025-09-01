@@ -5,6 +5,22 @@
 	<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png" alt="Flutter Logo" width="120" />
 </p>
 
+## 👨‍💻 Student Identity
+
+<div align="center">
+
+| 📋 **Information** | 📝 **Details** |
+|:---:|:---:|
+| **Name** | Vidi Joshubzky Saviola |
+| **NIM** | 2341720112 |
+| **Semester** | 5 |
+| **Program** | Mobile Development |
+| **Institution** | Politeknik Negeri Malang |
+
+</div>
+
+---
+
 Welcome to **Mobile-Sem-V**! 🚀
 
 This repository is a collection of university tasks and assignments focused on learning Flutter and Dart. Here, you'll find code samples, exercises, and notes designed to help you master mobile development with Flutter.
@@ -24,7 +40,7 @@ This repository is a collection of university tasks and assignments focused on l
 | Folder | Decription | Link |
 | :---: | :--- | :--- |
 | Week-01 | Pengantar Pemrograman Mobile  | - |
-| Week-02 | Pengantar Bahasa Pemrograman Dart - Bagian 1 | https://github.com/TMTMPST/Mobile-Sem-V/tree/main/Week-02 |
+| Week-02 | Pengantar Bahasa Pemrograman Dart - Bagian 1 | https://github.com/TMTMPST/2341720112-Mobile-Semester-V/tree/main/Week-02 |
 | Week-03 | Pengantar Bahasa Pemrograman Dart - Bagian 2 | - |
 ---
 
