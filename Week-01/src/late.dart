@@ -1,14 +1,10 @@
-class Pengguna {
-  late String deskripsi;
-
-  void setDeskripsi(String nama, int umur) {
-    print("Sedang mengatur deskripsi...");
-    this.deskripsi = "Pengguna bernama $nama, berumur $umur tahun.";
-  }
-}
-
 void main() {
-  var pengguna = Pengguna();
-  pengguna.setDeskripsi("Ana", 25);
-  print(pengguna.deskripsi);
+  late String lateString;
+  late int lateNumber;
+  
+  lateString = "Hello from Late Variable";
+  lateNumber = 42;
+  
+  print(lateString); 
+  print(lateNumber);
 }

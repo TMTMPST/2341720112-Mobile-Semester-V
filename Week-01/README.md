@@ -56,7 +56,7 @@ void main(){
 * Kompilasi JIT mempercepat pengembangan dengan fitur Hot Reload.
 * Kompilasi AOT memastikan aplikasi rilis berjalan dengan sangat cepat.
 * Sintaks Dart mirip dengan bahasa C, Java, atau JavaScript.
-* Dart sepenuhnya mendukung paradigma pemrograman berorientasi objek.
+* Dart sepenuhnya mendukung OOP.
 * Operator yang tersedia di Dart sangat standar dan mudah dipahami.
 * DartPad adalah alat online untuk mencoba kode Dart tanpa instalasi.
 
@@ -68,19 +68,19 @@ void main(){
 #### Contoh Null Safety:
 ```dart
 void main() {
-  // Nullable variable (bisa null)
-  String? nullableString;
-  nullableString = null; // ✅ Diperbolehkan
-  nullableString = "Hello"; // ✅ Diperbolehkan
-  
-  // Non-nullable variable (tidak bisa null)
-  String nonNullableString = "Hello World";
-  // nonNullableString = null; // ❌ Error kompilasi
-  
-  print(nonNullableString); // ✅ Aman
-  print(nullableString?.length ?? 0); // ✅ Safe access
+  String? alamat;
+  alamat = null;
+  print("Alamat saat ini: $alamat");
+
+  // alamat = "Jalan Merdeka No. 10";
+  if (alamat != null) {
+    print("Panjang alamat: ${alamat.length}");
+  } else {
+    print("Alamat tidak diketahui.");
+  }
 }
 ```
+![](./img/image3.png)
 
 ### Late Variables
 **Late variables** adalah variabel yang dideklarasikan terlebih dahulu tetapi diinisialisasi nanti, sebelum digunakan.
@@ -102,21 +102,7 @@ void main() {
 }
 ```
 
-#### Contoh Late dengan Function:
-```dart
-late String expensiveCalculation;
-
-void main() {
-  // Late variable hanya diinisialisasi ketika pertama kali diakses
-  expensiveCalculation = calculateSomething();
-  print(expensiveCalculation);
-}
-
-String calculateSomething() {
-  print("Calculating...");
-  return "Result of expensive calculation";
-}
-```
+![](./img/image4.png)
 
 ### Perbedaan Utama:
 
