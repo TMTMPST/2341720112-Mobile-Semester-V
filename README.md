@@ -15,16 +15,17 @@ This repository is a collection of university tasks and assignments focused on l
 
 - **Dart Fundamentals:** Learn the basics of Dart, including null safety and late variables.
 - **Flutter Concepts:** Explore Flutter widgets and UI building (coming in future weeks).
-- **University Assignments:** Real tasks and exercises from coursework.
+- **Project:** Real tasks and doing project (Coming Soon).
 
 ---
 
 ## 📁 Repository Structure
-
-- `Week1/` — Dart basics and introductory exercises
-	- `first.dart`, `late.dart`, `null.dart`: Dart code samples
-	- `readme.md`: Notes and explanations
-
+### Source CodeLab: https://jti-polinema.github.io/flutter-codelab/
+| Folder | Decription | Link |
+| :---: | :--- | :--- |
+| Week-01 | Pengantar Pemrograman Mobile  | - |
+| Week-02 | Pengantar Bahasa Pemrograman Dart - Bagian 1 | https://github.com/TMTMPST/Mobile-Sem-V/tree/main/Week-02 |
+| Week-03 | Pengantar Bahasa Pemrograman Dart - Bagian 2 | - |
 ---
 
 ## 🚀 Getting Started
