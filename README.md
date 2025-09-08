@@ -41,7 +41,7 @@ This repository is a collection of university tasks and assignments focused on l
 | :---: | :--- | :--- |
 | Week-01 | Pengantar Pemrograman Mobile  | - |
 | Week-02 | Pengantar Bahasa Pemrograman Dart - Bagian 1 | https://github.com/TMTMPST/2341720112-Mobile-Semester-V/tree/main/Week-02 |
-| Week-03 | Pengantar Bahasa Pemrograman Dart - Bagian 2 | - |
+| Week-03 | Pengantar Bahasa Pemrograman Dart - Bagian 2 | https://github.com/TMTMPST/2341720112-Mobile-Semester-V/tree/main/Week-03 |
 ---
 
 ## 🚀 Getting Started
