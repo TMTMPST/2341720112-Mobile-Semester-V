@@ -4,25 +4,31 @@ Nama: Vidi Joshubzky Saviola
 NIM: 2341720112
 
 ## Soal 1
+
 Selesaikan Praktikum 1 sampai 5, lalu dokumentasikan dan push ke repository Anda berupa screenshot setiap hasil pekerjaan beserta penjelasannya di file README.md!
 
 ### Praktikum 1: Membuat Project Flutter Baru
+
 #### Langkah 1
+
 Buka VS Code, lalu tekan tombol Ctrl + Shift + P maka akan tampil Command Palette, lalu ketik Flutter. Pilih New Application Project.
 
 ![Gambar 1](img/image1.png)
 
 #### Langkah 2
+
 Kemudian buat folder sesuai style laporan praktikum yang Anda pilih. Disarankan pada folder dokumen atau desktop atau alamat folder lain yang tidak terlalu dalam atau panjang. Lalu pilih Select a folder to create the project in.
 
 ![Gambar 2](img/image2.png)
 
 #### Langkah 3
+
 Buat nama project flutter hello_world seperti berikut, lalu tekan Enter. Tunggu hingga proses pembuatan project baru selesai.
 
 ![Gambar 3](img/image3.png)
 
 #### Langkah 4
+
 Jika sudah selesai proses pembuatan project baru, pastikan tampilan seperti berikut. Pesan akan tampil berupa "Your Flutter Project is ready!" artinya Anda telah berhasil membuat project Flutter baru.
 ![Gambar 4](img/image4.png)
 
@@ -33,13 +39,15 @@ Melanjutkan dari praktikum 1, Anda diminta untuk menjalankan aplikasi ke perangk
 ![imgself](img/imgself.jpg)
 
 ### Praktikum 3: Membuat Repository GitHub dan Laporan Praktikum
-> Skip Langkah ini jika Anda sudah memiliki repository GitHub untuk menyimpan laporan praktikum.
 
+> Skip Langkah ini jika Anda sudah memiliki repository GitHub untuk menyimpan laporan praktikum.
 
 ### Praktikum 4: Menerapkan Widget Dasar
 
 #### Langkah 1: Text Widget
+
 Buat folder baru basic_widgets di dalam folder lib. Kemudian buat file baru di dalam basic_widgets dengan nama text_widget.dart. Ketik atau salin kode program berikut ke project hello_world Anda pada file text_widget.dart.
+
 ```dart
 import 'package:flutter/material.dart';
 
@@ -55,11 +63,13 @@ class MyTextWidget extends StatelessWidget {
   }
 }
 ```
+
 ![Gambar 5](img/image5.png)
 
 #### Langkah 2: Image Widget
 
 Buat sebuah file image_widget.dart di dalam folder basic_widgets dengan isi kode berikut.
+
 ```dart
 import 'package:flutter/material.dart';
 
@@ -80,6 +90,7 @@ class MyImageWidget extends StatelessWidget {
 ### Praktikum 5: Menerapkan Widget Material Design dan iOS Cupertino
 
 #### Langkah 1: Cupertino Button dan Loading Bar
+
 Buat file di basic_widgets > loading_cupertino.dart. Import stateless widget dari material dan cupertino. Lalu isi kode di dalam method Widget build adalah sebagai berikut.
 
 ```dart
@@ -122,6 +133,7 @@ return MaterialApp(
     );
 
 ```
+
 ![Gambar 8](img/image8.png)
 
 #### Langkah 3: Scaffold Widget
@@ -129,6 +141,7 @@ return MaterialApp(
 Scaffold widget digunakan untuk mengatur tata letak sesuai dengan material design.
 
 Ubah isi kode main.dart seperti berikut.
+
 ```dart
 import 'package:flutter/material.dart';
 
@@ -199,18 +212,21 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment Counter',
         child: const Icon(Icons.add),
-      ), 
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
 ```
+
 ![Gambar 10](img/image10.png)
+
 #### Langkah 4: Dialog Widget
 
 Dialog widget pada flutter memiliki dua jenis dialog yaitu AlertDialog dan SimpleDialog.
 
 Ubah isi kode main.dart seperti berikut.
+
 ```dart
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -269,6 +285,7 @@ showAlertDialog(BuildContext context) {
   );
 }
 ```
+
 ![Gambar 9](img/gif.gif)
 
 #### Langkah 5: Input dan Selection Widget
@@ -276,6 +293,7 @@ showAlertDialog(BuildContext context) {
 Flutter menyediakan widget yang dapat menerima input dari pengguna aplikasi yaitu antara lain Checkbox, Date and Time Pickers, Radio Button, Slider, Switch, TextField.
 
 Contoh penggunaan TextField widget adalah sebagai berikut:
+
 ```dart
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -297,6 +315,7 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
+
 ![Gambar 9](img/image9.png)
 
 #### Langkah 6: Date and Time Pickers
@@ -381,10 +400,246 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ![Gambar 11](img/image11.png)
 
-
 ## 2. Selesaikan Codelabs: Your first Flutter app, lalu buatlah laporan praktikumnya dan push ke repository GitHub Anda!
 
+### Codelab: Your First Flutter App (namer_app)
+
+Codelab ini mengajarkan cara membuat aplikasi Flutter pertama yang berupa generator nama random dengan fitur favorit.
+
+#### Langkah 1: Membuat Project Flutter Baru
+
+Membuat project Flutter baru dengan nama `namer_app` menggunakan command palette VS Code dengan perintah "Flutter: New Application Project".
+
+![Codelab 1](img/imagecd1.png)
+
+**Penjelasan**: Project Flutter baru telah dibuat dengan nama `namer_app`. Project ini akan menjadi aplikasi generator nama random yang interaktif menggunakan package `english_words` dan `provider` untuk state management.
+
+#### Langkah 2: Menambahkan Dependencies dan Konfigurasi
 
 
+![Codelab 2](img/imagecd2.png)
 
-## 3. README.md berisi: capture hasil akhir tiap praktikum (side-by-side, bisa juga berupa file GIF agar terlihat proses perubahan ketika ada aksi dari pengguna) dengan menampilkan NIM dan Nama Anda sebagai ciri pekerjaan Anda. 
+**Penjelasan**: Aplikasi berhasil dijalankan dengan dependencies yang diperlukan. Package `english_words` digunakan untuk generate kata random, sedangkan `provider` untuk state management yang efisien.
+
+#### Langkah 3: Implementasi Name Generator dengan Navigation
+
+Mengimplementasikan aplikasi generator nama lengkap dengan fitur navigation, favorit, dan responsive design.
+
+**Kode lengkap main.dart:**
+
+```dart
+import 'package:english_words/english_words.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ChangeNotifierProvider(
+      create: (context) => MyAppState(),
+      child: MaterialApp(
+        title: 'Namer App',
+        theme: ThemeData(
+          useMaterial3: true,
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
+        ),
+        home: MyHomePage(),
+      ),
+    );
+  }
+}
+
+class MyAppState extends ChangeNotifier {
+  var current = WordPair.random();
+
+  void getNext() {
+    current = WordPair.random();
+    notifyListeners();
+  }
+
+  var favorites = <WordPair>[];
+
+  void toggleFavorite() {
+    if (favorites.contains(current)) {
+      favorites.remove(current);
+    } else {
+      favorites.add(current);
+    }
+    notifyListeners();
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  var selectedIndex = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    Widget page;
+    switch (selectedIndex) {
+      case 0:
+        page = GeneratorPage();
+        break;
+      case 1:
+        page = FavoritesPage();
+        break;
+      default:
+        throw UnimplementedError('no widget for $selectedIndex');
+    }
+
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        return Scaffold(
+          body: Row(
+            children: [
+              SafeArea(
+                child: NavigationRail(
+                  extended: constraints.maxWidth >= 600,
+                  destinations: [
+                    NavigationRailDestination(
+                      icon: Icon(Icons.home),
+                      label: Text('Home'),
+                    ),
+                    NavigationRailDestination(
+                      icon: Icon(Icons.favorite),
+                      label: Text('Favorites'),
+                    ),
+                  ],
+                  selectedIndex: selectedIndex,
+                  onDestinationSelected: (value) {
+                    setState(() {
+                      selectedIndex = value;
+                    });
+                  },
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  color: Theme.of(context).colorScheme.primaryContainer,
+                  child: page,
+                ),
+              ),
+            ],
+          ),
+        );
+      }
+    );
+  }
+}
+
+class GeneratorPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var appState = context.watch<MyAppState>();
+    var pair = appState.current;
+
+    IconData icon;
+    if (appState.favorites.contains(pair)) {
+      icon = Icons.favorite;
+    } else {
+      icon = Icons.favorite_border;
+    }
+
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          BigCard(pair: pair),
+          SizedBox(height: 10),
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ElevatedButton.icon(
+                onPressed: () {
+                  appState.toggleFavorite();
+                },
+                icon: Icon(icon),
+                label: Text('Like'),
+              ),
+              SizedBox(width: 10),
+              ElevatedButton(
+                onPressed: () {
+                  appState.getNext();
+                },
+                child: Text('Next'),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class BigCard extends StatelessWidget {
+  const BigCard({
+    super.key,
+    required this.pair,
+  });
+
+  final WordPair pair;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final style = theme.textTheme.displayMedium!.copyWith(
+      color: theme.colorScheme.onPrimary,
+    );
+
+    return Card(
+      color: theme.colorScheme.primary,
+      child: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Text(
+          pair.asLowerCase,
+          style: style,
+          semanticsLabel: "${pair.first} ${pair.second}",
+        ),
+      ),
+    );
+  }
+}
+
+class FavoritesPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var appState = context.watch<MyAppState>();
+
+    if (appState.favorites.isEmpty) {
+      return Center(
+        child: Text('No favorites yet.'),
+      );
+    }
+
+    return ListView(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(20),
+          child: Text('You have '
+              '${appState.favorites.length} favorites:'),
+        ),
+        for (var pair in appState.favorites)
+          ListTile(
+            leading: Icon(Icons.favorite),
+            title: Text(pair.asLowerCase),
+          ),
+      ],
+    );
+  }
+}
+```
+
+![Codelab 3](img/imagecd3.png)
+
+
+## 3. README.md berisi: capture hasil akhir tiap praktikum (side-by-side, bisa juga berupa file GIF agar terlihat proses perubahan ketika ada aksi dari pengguna) dengan menampilkan NIM dan Nama Anda sebagai ciri pekerjaan Anda.
