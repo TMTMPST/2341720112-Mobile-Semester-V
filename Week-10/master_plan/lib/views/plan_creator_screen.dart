@@ -40,7 +40,7 @@ class _PlanCreatorScreenState extends State<PlanCreatorScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Master Plans Widi',
+          'Master Plans Vidi',
           style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
