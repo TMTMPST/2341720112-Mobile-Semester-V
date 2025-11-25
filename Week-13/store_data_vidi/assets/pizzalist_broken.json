@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "pizzaName": "Margherita",
+    "description": "Pizza with tomato, fresh mozzarella and basil",
+    "price": 8.75,
+    "imageUrl": "images/margherita.png"
+  },
+  {
+    "id": "2",
+    "price": 7.5,
+    "imageUrl": "images/mushroom.png"
+  },
+  {
+    "id": 3,
+    "pizzaName": "Napoli",
+    "price": 9.5,
+    "imageUrl": "images/napoli.png"
+  },
+  {
+    "id": 4,
+    "pizzaName": "Carciofi",
+    "description": "Pizza with tomato, fresh mozzarella and artichokes",
+    "price": "gratis",
+    "imageUrl": "images/artichokes.png"
+  },
+  {
+    "id": 5,
+    "pizzaName": "Bufala",
+    "description": "Pizza with tomato, buffalo mozzarella and basil",
+    "imageUrl": "images/bufala.png"
+  }
+]
